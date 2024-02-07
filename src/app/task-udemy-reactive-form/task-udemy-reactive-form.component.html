@@ -1,0 +1,51 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-sm-offset-1 col-md-offset-2">
+            <form [formGroup]="projectForm" (ngSubmit)="onSubmit()" >
+                <div class="form-group">
+
+                    <label for="name">Project Name</label>
+                    <input type="text" id="name"
+                    formControlName="projectName"
+                    class="form-control">
+                    <span *ngIf="!projectForm.get('projectName')?.valid && projectForm.get('projectName')?.touched" class="invalid">
+                        <span *ngIf="projectForm.get('projectName')?.errors!['notAllowProjectName'] && projectForm.get('projectName')?.value">Invalid Project Name</span>
+                        <span *ngIf="projectForm.get('projectName')?.errors!['required'] && projectForm.get('projectName')?.touched">Required Filed</span>
+
+                    </span>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">Email Id</label>
+                    <input type="email" id="email"
+                    formControlName="projectEmail"
+                    class="form-control">
+                    <span *ngIf="!projectForm.get('projectEmail')?.valid && projectForm.get('projectEmail')?.touched" class="invalid">
+                        <span *ngIf="projectForm.get('projectEmail')?.errors!['email'] && projectForm.get('projectEmail')?.value">Invalid Email Id</span>
+                        <span *ngIf="projectForm.get('projectEmail')?.errors!['required'] && projectForm.get('projectEmail')?.touched">Required Email Filed</span>
+
+                    </span>
+                </div>
+
+                
+                <div class="form-group mt-3" >
+                    
+                    <!-- <lib-textbox formControlName="projectName" name class="input-row col-8"> </lib-textbox> -->
+                    <label for="status">Project Status</label>
+                    <select class=" form-control form-select" id="status"                     
+                    formControlName="projectStatus"
+                    >
+                        <option value="stable" >Stable</option>
+                        <option value="criticle" >Critical</option>
+                        <option value="finished" >Finished</option>
+                    </select>
+                    
+                </div>
+
+                <button class="btn btn-success mt-2" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
