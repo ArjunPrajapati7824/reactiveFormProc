@@ -132,4 +132,18 @@ export class AppComponent {
   // }
 
 
+
+//   <div class="column" >
+//   <div class="input-box" formArrayName="skills">
+//     <input type="text" placeholder="Add Skill" *ngFor="let skillControl of setSkillControls() ; 
+//      let skillFormControlname=index" [formControlName]="skillFormControlname">  
+//   </div>
+//   <div class="input-box">
+//     <button class="btn-gen-skill" type="button" (click)="addNewSkill()"
+//     >Add Skills</button>
+    
+ 
+//   </div>
+// </div>
+
 }

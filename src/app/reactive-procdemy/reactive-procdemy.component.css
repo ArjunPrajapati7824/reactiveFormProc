@@ -120,6 +120,14 @@
   input.ng-invalid.ng-touched{
     border: red 2px solid;
   }
+
+  input.ng-pending{
+    border: yellow 2px solid;
+    
+
+  }
+
+
   
   small{
     color: red;
@@ -134,11 +142,21 @@
     border: none;
     color: white;
   }
-  .btn-add-delete{
+
+  .btn-gen-skill{
     margin: 10px 0px;
-    padding: 14px 30px;
+    padding: 13px 30px;
     border-radius: 5px;
-    background: #E7005E;
+    background: #120229;
+    border: none;
+    color: white;
+  }
+  .btn-del-skill{
+    margin: 10px 0px;
+
+    padding: 13px 30px;
+    border-radius: 5px;
+    background: #ba0101;
     border: none;
     color: white;
   }
@@ -209,3 +227,31 @@
   .container.PENDING{
     border: orange 3px solid;
   } */
+
+ .statusMsg{
+  color: red;
+
+ }
+
+ .container.INVALID{
+  border:2px solid red
+ }
+
+ .container.VALID{
+  border:2px solid green
+
+ }
+
+ .container.PENDING{
+  border:2px solid yellow
+
+ }
+
+ .border{
+  border: 1px solid black;
+ }
+ .user-info{
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+ }

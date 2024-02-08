@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  .prescription {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .header {
+    background-color: #2f0410;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  .patient-info, .doctor-info {
+    padding: 20px;
+  }
+  .patient-info p, .doctor-info p {
+    margin: 5px 0;
+  }
+  .Experiance {
+    padding: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .instructions {
+    margin-top: 20px;
+    padding: 0 20px 20px 20px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+  }
